@@ -39,14 +39,24 @@ fi
 # Apply changes
 source "$ENV_FILE"
 
+echo "==> Launching Android Studio for initial setup..."
+android-studio &
+
 echo "==> All done!"
 echo ""
-echo "🚀 Android Studio installed. Now launch it to install the Android SDK and emulator:"
-echo "   $ android-studio"
+echo "🚀 Android Studio is now launching. Complete the setup wizard to install the Android SDK and emulator."
 echo ""
 echo "📱 After SDK setup, create a React Native app:"
 echo "   $ npx create-expo-app@latest "$PROJECT_NAME" --template bare-minimum"
 echo "   $ cd $PROJECT_NAME"
 echo "   $ npm run android"
 echo ""
-echo "✅ You may need to reboot or restart your terminal to finalize environment variable setup."
+echo "✅ Setup complete! A reboot is recommended to finalize all changes."
+read -p "Would you like to reboot now? (y/N): " -n 1 -r
+echo
+if [[ $REPLY =~ ^[Yy]$ ]]; then
+    echo "Rebooting..."
+    sudo reboot
+else
+    echo "Please reboot manually when convenient to complete the setup."
+fi
