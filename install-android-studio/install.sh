@@ -39,19 +39,19 @@ fi
 # Apply changes
 source "$ENV_FILE"
 
-# echo "==> Launching Android Studio for initial setup..."
+echo "==> Launching Android Studio for initial setup..."
 nohup android-studio > /dev/null 2>&1 & disown
 
 echo "==> All done!"
 echo ""
-echo "🚀 Android Studio is now launching. Complete the setup wizard to install the Android SDK and emulator."
+echo "Android Studio is now launching. Complete the setup wizard to install the Android SDK and emulator."
 echo ""
-echo "📱 After SDK setup, create a React Native app:"
+echo "After SDK setup, create a React Native app:"
 echo "   \$ npx create-expo-app@latest myapp --template bare-minimum"
 echo "   \$ cd myapp"
 echo "   \$ npm run android"
 echo ""
-echo "✅ Setup complete! A reboot is recommended to finalize all changes."
+echo "Setup complete! A reboot is recommended to finalize all changes."
 read -p "Would you like to reboot now? (y/N): " -n 1 -r
 echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]; then
