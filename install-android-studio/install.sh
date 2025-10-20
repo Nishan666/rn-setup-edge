@@ -48,7 +48,7 @@ echo "🚀 Android Studio is now launching. Complete the setup wizard to install
 echo ""
 echo "📱 After SDK setup, create a React Native app:"
 echo "   $ npx create-expo-app@latest myapp --template bare-minimum"
-echo "   $ cd myapp
+echo "   $ cd myapp"
 echo "   $ npm run android"
 echo ""
 echo "✅ Setup complete! A reboot is recommended to finalize all changes."
