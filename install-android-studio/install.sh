@@ -53,7 +53,7 @@ echo "   \$ npm run android"
 echo ""
 echo "✅ Setup complete! A reboot is recommended to finalize all changes."
 read -p "Would you like to reboot now? (y/N): " -n 1 -r
-echo
+echo ""
 if [[ $REPLY =~ ^[Yy]$ ]]; then
     echo "Rebooting..."
     sudo reboot
