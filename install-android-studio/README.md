@@ -13,7 +13,7 @@ Automated setup script for React Native development environment on Ubuntu/Debian
 ## Quick Install
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/Nishan666/rn-setup-edge/master/install-android-studio/install.sh | bash
+command -v curl >/dev/null 2>&1 || (sudo apt update && sudo apt install -y curl) && curl -fsSL https://raw.githubusercontent.com/Nishan666/rn-setup-edge/master/install-android-studio/install.sh | bash
 ```
 
 ## Manual Install
