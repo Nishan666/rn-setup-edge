@@ -40,7 +40,7 @@ fi
 source "$ENV_FILE"
 
 # echo "==> Launching Android Studio for initial setup..."
-# nohup android-studio > /dev/null 2>&1 & disown
+nohup android-studio > /dev/null 2>&1 & disown
 
 echo "==> All done!"
 echo ""
